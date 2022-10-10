@@ -1,0 +1,33 @@
+* E:\Venu\esim_works\6T_SRAM\6T_SRAM.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/09/22 04:42:57
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+SC1  out wl wbl GND sky130_fd_pr__nfet_01v8_lvt		
+SC5  outblb out GND GND sky130_fd_pr__nfet_01v8_lvt		
+SC3  GND outblb out GND sky130_fd_pr__nfet_01v8_lvt		
+SC6  wblb wl outblb GND sky130_fd_pr__nfet_01v8_lvt		
+SC4  outblb out Net-_SC2-Pad1_ Net-_SC2-Pad1_ sky130_fd_pr__pfet_01v8_lvt		
+SC2  Net-_SC2-Pad1_ outblb out Net-_SC2-Pad1_ sky130_fd_pr__pfet_01v8_lvt		
+U2  wl plot_v1		
+U3  wblb plot_v1		
+U1  wbl plot_v1		
+scmode1  SKY130mode		
+v3  wl GND pulse		
+v2  Net-_SC2-Pad1_ GND DC		
+U4  out plot_v1		
+U5  outblb plot_v1		
+SC7  XNOR xnb out Net-_SC2-Pad1_ sky130_fd_pr__pfet_01v8_lvt		
+SC8  outblb xn XNOR Net-_SC2-Pad1_ sky130_fd_pr__pfet_01v8_lvt		
+v1  xn GND pulse		
+v4  xnb GND pulse		
+U7  XNOR plot_v1		
+U8  xn plot_v1		
+U6  xnb plot_v1		
+v6  wblb GND pulse		
+v5  wbl GND pulse		
+
+.end
